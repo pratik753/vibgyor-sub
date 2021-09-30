@@ -1,0 +1,62 @@
+.tophr {
+    border: 3px solid rgb(178, 126, 4);
+    width: 19%;
+}
+
+.divderhr {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.firstdiv {
+    height: 90%;
+    /* background-color: rgb(215, 216, 216); */
+}
+
+.spacebt {
+    width: 50%;
+}
+
+.head {
+    color: #000;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* table */
+
+#fontsty {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width:600px) {
+    #fontsty {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 8px;
+        font-weight: bold;
+    }
+}
+
+
+/* sectioncolor */
+
+.sectioncolor1 {
+    background-color: rgb(238, 250, 248);
+}
+
+.sectioncolor2 {
+    background-color: rgb(253, 250, 250)
+}
+
+
+/* /////////////// */
+
+
+/* #Vissionp {
+    font-size: 15px;
+} */

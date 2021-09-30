@@ -1,0 +1,6 @@
+
+
+User-agent: *
+Disallow: /assets
+Disallow: /explore/assets
+Disallow: /404.html

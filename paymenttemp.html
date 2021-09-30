@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html class="no-js" lang="en">
+    <head>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-WWE3C8BVZB");
+      </script>
+
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Payment</title>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
+      <link rel="stylesheet" href="/assets/css/vendor/fontawesome.css" />
+      <link rel="stylesheet" href="/assets/css/vendor/lightbox.css" />
+      <link rel="stylesheet" href="/assets/css/plugins/plugins.css" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/vendor/mdb.min.css" />
+      <link rel="stylesheet" href="/assets/css/vendor/aos.css" />
+      <!-- Facebook Pixel Code -->
+      <script>
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "223792792397151");
+        fbq("track", "PageView");
+      </script>
+      <style>
+        .rounded {
+          border-radius: 1rem;
+        }
+
+        .nav-pills .nav-link {
+          color: #555;
+        }
+
+        .nav-pills .nav-link.active {
+          color: white;
+        }
+
+        input[type="radio"] {
+          margin-right: 5px;
+        }
+        .social-icons {
+          font-size: xxx-large;
+          margin-left: 4%;
+        }
+        .social-icons:nth-child(1) {
+          background-color: rgb(36, 231, 36);
+          color: white;
+          padding: 0.5%;
+          border-radius: 30%;
+        }
+        .social-icons:nth-child(2) {
+          background-color: rgb(231, 49, 36);
+          color: white;
+          padding: 0.5%;
+          border-radius: 30%;
+        }
+        .bold {
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="main-page">
+        <div class="row mb-4">
+          <div style="margin: 10%" class="col-lg-8 mx-auto text-center">
+            <h1 class="display-6">Payment</h1>
+          </div>
+        </div>
+        <div style="margin: 6%" class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center">
+            <p>
+              Our payment services are soon to start till then you can tranfer
+              money in our account
+            </p>
+            <b><p>Pay Rs<span id="amount"></span> for <span id="plan"></span></p></b>
+            <p>Our details below:</p>
+            <div style="border: 1px solid #555">
+              A/C no:&nbsp; 7512779400 <br />IFSC:&nbsp;KKBK0000682
+            </div>
+            <p>Once the Payment is successful send a screenshot at:</p>
+            <div>
+              <a
+                class="social-icons"
+                href="https://api.whatsapp.com/send?phone=9833224447"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a class="social-icons" href="mailto:info@vibgyoradvisors.com"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+      <script src="/assets/js/vendor/modernizr.min.js"></script>
+      <!-- jQuery JS -->
+      <script src="/assets/js/vendor/jquery.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="/assets/js/vendor/bootstrap.min.js"></script>
+      <script src="/assets/js/vendor/stellar.js"></script>
+      <script src="/assets/js/vendor/particles.js"></script>
+      <script src="/assets/js/vendor/masonry.js"></script>
+      <script src="/assets/js/vendor/stickysidebar.js"></script>
+      <script src="/assets/js/plugins/plugins.min.js"></script>
+      <script src="/assets/js/vendor/mdb.min.js"></script>
+      <!-- Main JS -->
+      <script src="/assets/js/main.js"></script>
+      <script src="/assets/js/lazyload.js"></script>
+
+      <script>
+        // Slide every slideDelay seconds
+        const slideDelay = 10000;
+
+        const dynamicSlider = document.getElementById("slider");
+
+        var curSlide = 0;
+        window.setInterval(() => {
+          curSlide++;
+          if (curSlide === dynamicSlider.childElementCount) {
+            curSlide = 0;
+          }
+
+          // Actual slide
+          dynamicSlider.firstElementChild.style.setProperty(
+            "margin-left",
+            "-" + curSlide + "00%"
+          );
+        }, slideDelay)
+        
+        document.getElementById("amount").innerHTML =sessionStorage.getItem("Amount");
+        document.getElementById("plan").innerHTML = sessionStorage.getItem("Name");
+      </script>
+    </body>
+  </html>
+</html>
